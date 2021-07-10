@@ -345,6 +345,8 @@ header .navbar ul li a:hover {
     font-size: 1.7rem;
 }
 
+/* Education part */
+
 .education .box-container {
     display: flex;
     align-items: center;
@@ -404,6 +406,8 @@ header .navbar ul li a:hover {
 
 }
 
+/* portfolio part */
+
 .portfolio .box-container {
     display: flex;
     align-items: center;
@@ -430,6 +434,8 @@ header .navbar ul li a:hover {
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
 }
+
+/*  contact part*/
 
 .contact .row {
     display: flex;
@@ -493,6 +499,7 @@ header .navbar ul li a:hover {
     color: var(--main-color);
 }
 
+/* top scroll button  */
 .top{
     position: fixed;
     bottom: 2rem;
@@ -502,7 +509,7 @@ header .navbar ul li a:hover {
     height: 100px;
 }
 
-/* media queries */
+/* media queries*/
 @media(max-width:1200px) {
     html {
         font-size: 55%;
