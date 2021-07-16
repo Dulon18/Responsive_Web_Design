@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+                <h3>Dulan</h3>
+                <ul>
+                    <li><a href="#"></a>home</li>
+                    <li><a href="#"></a>about</li>
+                    <li><a href="#"></a>specification</li>
+                    <li><a href="#"></a>connect</li>
+                </ul>
+        </div>
+         <div class="content">
+             <div class="left-col">
+                 <h1><span>The<br></span> Real <br>Music</h1>
+             </div>
+           <div class="row-col">
+           <p>Click here to listen</p>
+              <img src="img/p.png" id="icon">
+           </div>
+         </div>
+    </div>
+     <audio   id="song">
+         <source src="img/Badshah - Paani Paani.mp3" type="audio/mp3">
+     </audio>
+     <script>
+         var  song=document.getElementById("song");
+         var icon =document.getElementById("icon");
+            icon.onclick = function(){
+            if(song.paused){
+                song.play();
+                icon.src="img/pu.png"; //play button image
+            }
+            else{
+                song.pause();
+                icon.src = "img/p.png";  //pause button image
+            }
+         }
+     </script>
+</body>
+</html>
